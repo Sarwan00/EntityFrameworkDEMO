@@ -1,0 +1,35 @@
+﻿
+
+ @model MVCDemo.Models.Employee
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h2>Employee Details</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <tr>
+                    <td><b>Employee Id:</b></td>
+                    <td>@Model.id</td>
+                </tr>
+                <tr>
+                    <td><b>Employee Name:</b></td>
+                    <td>@Model.name</td>
+                </tr>
+                <tr>
+                    <td><b>Employee Address:</b></td>
+                    <td>@Model.city</td>
+                </tr>
+                <tr>
+                    <td><b>Employee Gender:</b></td>
+                    <td>@Model.gender</td>
+                </tr>
+                <tr>
+                    <td><b>Employee Dept:</b></td>
+                    <td>@Model.deptid</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+@Html.ActionLink("Back To List", "EmployeeNameList")
